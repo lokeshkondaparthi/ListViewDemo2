@@ -42,26 +42,20 @@ public class ListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        VH viewHolder;
+        ViewHolder holder;
         if (view == null) {
+            holder = new ViewHolder();
+            holder.textView = view.findViewById(R.id.textView);
+            view.setTag(holder);
             view = inflater.inflate(R.layout.row_layout, null);
-            viewHolder = new VH();
-            viewHolder.textView = view.findViewById(R.id.textView);
-            view.setTag(viewHolder);
-            {
-                System.out.print("Hi");
-                System.out.print("Hi");
-                System.out.print("Hi");
-                System.out.print("Hi");
-
-            }
         } else {
-            viewHolder = (VH) view.getTag();
-            viewHolder.textView.setText("" + stringList.get(i));
+            holder = (ViewHolder) view.getTag();
         }
+        holder.textView.setText("" + stringList.get(i));
         return view;
     }
-    private class VH {
+
+    private class ViewHolder {
         private TextView textView;
     }
 }
