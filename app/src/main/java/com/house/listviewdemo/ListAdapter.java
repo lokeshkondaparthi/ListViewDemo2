@@ -30,6 +30,7 @@ public class ListAdapter extends BaseAdapter {
         return stringList.size();
     }
 
+
     @Override
     public Object getItem(int i) {
         return stringList.get(i);
@@ -42,16 +43,16 @@ public class ListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        ViewHolder holder;
+        ViewHolder viewHolder;
         if (view == null) {
-            holder = new ViewHolder();
-            holder.textView = view.findViewById(R.id.textView);
-            view.setTag(holder);
             view = inflater.inflate(R.layout.row_layout, null);
+            viewHolder = new ViewHolder();
+            viewHolder.textView = view.findViewById(R.id.textView);
+            view.setTag(viewHolder);
         } else {
-            holder = (ViewHolder) view.getTag();
+            viewHolder = (ViewHolder) view.getTag();
+            viewHolder.textView.setText("" + stringList.get(i));
         }
-        holder.textView.setText("" + stringList.get(i));
         return view;
     }
 
