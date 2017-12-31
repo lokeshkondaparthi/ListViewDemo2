@@ -30,6 +30,7 @@ public class ListAdapter extends BaseAdapter {
         return stringList.size();
     }
 
+
     @Override
     public Object getItem(int i) {
         return stringList.get(i);
@@ -45,13 +46,19 @@ public class ListAdapter extends BaseAdapter {
         ViewHolder holder;
         if (view == null) {
             holder = new ViewHolder();
+            view = inflater.inflate(R.layout.row_layout, null);
             holder.textView = view.findViewById(R.id.textView);
             view.setTag(holder);
-            view = inflater.inflate(R.layout.row_layout, null);
+            {
+                System.out.print("hi");
+                System.out.print("hi");
+                System.out.print("hi");
+                System.out.print("hi");
+            }
         } else {
             holder = (ViewHolder) view.getTag();
+            holder.textView.setText("" + stringList.get(i));
         }
-        holder.textView.setText("" + stringList.get(i));
         return view;
     }
 
