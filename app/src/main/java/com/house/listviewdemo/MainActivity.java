@@ -9,24 +9,25 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private List<String> list;
-    private ListView listView;
+    private ListView listV;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        {
-            System.out.print("hello world lokesh");
-            System.out.print("hello world lokesh");
-            System.out.print("hello world lokesh");
-            System.out.print("hello world lokesh");
-            System.out.print("hello world lokesh");
-            System.out.print("hello world lokesh");
-            System.out.print("hello world lokesh");
-        }
-        listView = findViewById(R.id.listView);
+        
+        listV = findViewById(R.id.listView);
         createList();
         ListAdapter adapter = new ListAdapter(this,list);
         listView.setAdapter(adapter);
+        {
+            System.out.print("lokesh");
+            System.out.print("hello");
+            System.out.print("hello  lokesh");
+            System.out.print("hello  lokesh");
+            System.out.print(" world lokesh");
+            System.out.print("hello  lokesh");
+            System.out.print("hello world");
+        }
     }
 
     private void createList() {
