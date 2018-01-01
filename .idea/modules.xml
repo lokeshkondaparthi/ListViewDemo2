@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ListViewDemo2.iml" filepath="$PROJECT_DIR$/ListViewDemo2.iml" />
+      <module fileurl="file://G:\android_practice\ListViewDemoMamatha\ListViewDemo2.iml" filepath="G:\android_practice\ListViewDemoMamatha\ListViewDemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ListViewDemoMamatha.iml" filepath="$PROJECT_DIR$/.idea/ListViewDemoMamatha.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
