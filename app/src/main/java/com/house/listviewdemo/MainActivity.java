@@ -14,6 +14,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        {
+            System.out.print("hello world lokesh");
+            System.out.print("hello world lokesh");
+            System.out.print("hello world lokesh");
+            System.out.print("hello world lokesh");
+            System.out.print("hello world lokesh");
+            System.out.print("hello world lokesh");
+            System.out.print("hello world lokesh");
+        }
         listView = findViewById(R.id.listView);
         createList();
         ListAdapter adapter = new ListAdapter(this,list);
