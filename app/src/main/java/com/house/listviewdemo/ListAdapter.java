@@ -41,6 +41,16 @@ public class ListAdapter extends BaseAdapter {
         return i;
     }
 
+    public void getItemVisiblity(){
+        {
+            System.out.print("hi");
+            System.out.print("hi");
+            System.out.print("hi");
+            System.out.print("hi");
+        }
+    }
+
+
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder holder;
@@ -49,12 +59,7 @@ public class ListAdapter extends BaseAdapter {
             view = inflater.inflate(R.layout.row_layout, null);
             holder.textView = view.findViewById(R.id.textView);
             view.setTag(holder);
-            {
-                System.out.print("hi");
-                System.out.print("hi");
-                System.out.print("hi");
-                System.out.print("hi");
-            }
+
         } else {
             holder = (ViewHolder) view.getTag();
             holder.textView.setText("" + stringList.get(i));
