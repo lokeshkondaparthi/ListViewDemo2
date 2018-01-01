@@ -14,11 +14,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        createList();
         listView = findViewById(R.id.listView);
+        createList();
         ListAdapter adapter = new ListAdapter(this,list);
         listView.setAdapter(adapter);
-
     }
 
     private void createList() {
