@@ -1,8 +1,11 @@
-package com.house.listviewdemo;
+package com.house.listviewdemo.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
+
+import com.house.listviewdemo.ListAdapter;
+import com.house.listviewdemo.R;
 
 import java.util.ArrayList;
 import java.util.List;
